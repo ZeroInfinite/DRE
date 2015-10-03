@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C9F1EF17-22EE-4FC1-B5A6-5AE489E66C90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C12CCAF5-6D6F-4566-BB44-213477685946}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{B56A72E8-6AFC-4988-B36C-9AD20237A57E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRE.Common", "DRE.Common\DRE.Common.csproj", "{BE90983A-2D22-4E3C-A6C0-305C1F0FE18E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{2381BDA3-4E5D-4757-8A3A-38E038A085DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRE.Common.Host", "DRE.Common.Host\DRE.Common.Host.csproj", "{EBAA62B0-3960-45C2-A23B-A2D53F6FE7F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E599CF13-DDAA-4311-A467-7E161D3C9765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRE.Service.Routing", "DRE.Service.Routing\DRE.Service.Routing.csproj", "{9895318C-CE18-486B-AB65-10CAD4F1445D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRE.Host.ASPX", "DRE.Host.ASPX\DRE.Host.ASPX.csproj", "{8D25CEA0-EDF4-4946-83D2-01D481B0A3DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRE.Host.IIS", "DRE.Host.IIS\DRE.Host.IIS.csproj", "{4D99D4C3-6F5B-4AC2-86A0-4FF6F0BE19E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRE.Host", "DRE.Host\DRE.Host.csproj", "{3E10BD6D-A4A8-43C8-8BA5-7CEB73A6374A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CA8EFEA5-EE03-4295-A393-8E9B9DB32714}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://zeromsn.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DRE.Common.Host\\DRE.Common.Host.csproj
+		SccProjectTopLevelParentUniqueName1 = DRE.sln
+		SccProjectName1 = DRE.Common.Host
+		SccLocalPath1 = DRE.Common.Host
+		SccProjectUniqueName2 = DRE.Common\\DRE.Common.csproj
+		SccProjectTopLevelParentUniqueName2 = DRE.sln
+		SccProjectName2 = DRE.Common
+		SccLocalPath2 = DRE.Common
+		SccProjectUniqueName3 = DRE.Service.Routing\\DRE.Service.Routing.csproj
+		SccProjectTopLevelParentUniqueName3 = DRE.sln
+		SccProjectName3 = DRE.Service.Routing
+		SccLocalPath3 = DRE.Service.Routing
+		SccProjectUniqueName4 = DRE.Host.ASPX\\DRE.Host.ASPX.csproj
+		SccProjectTopLevelParentUniqueName4 = DRE.sln
+		SccProjectName4 = DRE.Host.ASPX
+		SccLocalPath4 = DRE.Host.ASPX
+		SccProjectUniqueName5 = DRE.Host.IIS\\DRE.Host.IIS.csproj
+		SccProjectTopLevelParentUniqueName5 = DRE.sln
+		SccProjectName5 = DRE.Host.IIS
+		SccLocalPath5 = DRE.Host.IIS
+		SccProjectUniqueName6 = DRE.Host\\DRE.Host.csproj
+		SccProjectTopLevelParentUniqueName6 = DRE.sln
+		SccProjectName6 = DRE.Host
+		SccLocalPath6 = DRE.Host
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE90983A-2D22-4E3C-A6C0-305C1F0FE18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE90983A-2D22-4E3C-A6C0-305C1F0FE18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE90983A-2D22-4E3C-A6C0-305C1F0FE18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE90983A-2D22-4E3C-A6C0-305C1F0FE18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBAA62B0-3960-45C2-A23B-A2D53F6FE7F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBAA62B0-3960-45C2-A23B-A2D53F6FE7F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBAA62B0-3960-45C2-A23B-A2D53F6FE7F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBAA62B0-3960-45C2-A23B-A2D53F6FE7F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9895318C-CE18-486B-AB65-10CAD4F1445D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9895318C-CE18-486B-AB65-10CAD4F1445D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9895318C-CE18-486B-AB65-10CAD4F1445D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9895318C-CE18-486B-AB65-10CAD4F1445D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D25CEA0-EDF4-4946-83D2-01D481B0A3DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D25CEA0-EDF4-4946-83D2-01D481B0A3DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D25CEA0-EDF4-4946-83D2-01D481B0A3DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D25CEA0-EDF4-4946-83D2-01D481B0A3DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D99D4C3-6F5B-4AC2-86A0-4FF6F0BE19E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D99D4C3-6F5B-4AC2-86A0-4FF6F0BE19E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D99D4C3-6F5B-4AC2-86A0-4FF6F0BE19E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D99D4C3-6F5B-4AC2-86A0-4FF6F0BE19E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E10BD6D-A4A8-43C8-8BA5-7CEB73A6374A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E10BD6D-A4A8-43C8-8BA5-7CEB73A6374A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E10BD6D-A4A8-43C8-8BA5-7CEB73A6374A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E10BD6D-A4A8-43C8-8BA5-7CEB73A6374A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE90983A-2D22-4E3C-A6C0-305C1F0FE18E} = {C9F1EF17-22EE-4FC1-B5A6-5AE489E66C90}
+		{EBAA62B0-3960-45C2-A23B-A2D53F6FE7F2} = {C9F1EF17-22EE-4FC1-B5A6-5AE489E66C90}
+		{9895318C-CE18-486B-AB65-10CAD4F1445D} = {B56A72E8-6AFC-4988-B36C-9AD20237A57E}
+		{8D25CEA0-EDF4-4946-83D2-01D481B0A3DF} = {2381BDA3-4E5D-4757-8A3A-38E038A085DE}
+		{4D99D4C3-6F5B-4AC2-86A0-4FF6F0BE19E6} = {2381BDA3-4E5D-4757-8A3A-38E038A085DE}
+		{3E10BD6D-A4A8-43C8-8BA5-7CEB73A6374A} = {2381BDA3-4E5D-4757-8A3A-38E038A085DE}
+	EndGlobalSection
+EndGlobal

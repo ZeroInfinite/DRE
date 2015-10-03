@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DRE.Service.Routing.RoutingManagerService" CodeBehind="RoutingManagerService.svc.cs" Factory="DRE.Common.Host.UnityServiceHostFactory" %>
