@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceModel;
 
 namespace DRE.Common
 {
@@ -13,7 +8,7 @@ namespace DRE.Common
         public static ChannelFactory<T> Create<T>(HttpBindingBase bindings, string address)
         {
             EndpointAddress endpointAddress = new EndpointAddress(address);
-            return new ChannelFactory<T>(bindings, address);
+            return new ChannelFactory<T>(bindings, endpointAddress);
         }
 
         public static void Dispose<T>(ChannelFactory<T> channel, T channelInstance)

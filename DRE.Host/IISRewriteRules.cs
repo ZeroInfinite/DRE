@@ -10,17 +10,14 @@ namespace DRE.Host
     {
         public XmlElement GetRewriteRules()
         {
-            string appDataPath = HostingEnvironment.MapPath("~/App_Data");
+            var appDataPath = HostingEnvironment.MapPath("~/App_Data");
 
-            if (appDataPath != null)
-            {
-                string file = Path.Combine(appDataPath, "RewriteRules.xml");
-                XmlDocument doc = new XmlDocument();
-                doc.Load(file);
-                return doc.DocumentElement;
-            }
+            if (appDataPath == null) return null;
 
-            return null;
+            var file = Path.Combine(appDataPath, "RewriteRules.xml");
+            var doc = new XmlDocument();
+            doc.Load(file);
+            return doc.DocumentElement;
         }
     }
 }

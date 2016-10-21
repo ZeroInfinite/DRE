@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
+﻿using System.Collections.Generic;
 using DRE.Common.Host.Contracts;
 using DRE.Common.Contracts;
 
@@ -19,62 +14,56 @@ namespace DRE.Host.ASPX
             //    {"{controller}/{action}", new {controller = "Test", action = "Index"}}
             //};
 
-            var RouteCollection = new List<UrlRoute>();
-
-            RouteCollection.Add(
-            new UrlRoute()
+            var routeCollection = new List<UrlRoute>
             {
-                Name = "Default",
-                Url = "{controller}/{action}",
-                Fragment = "Test/Index",
-                PropertiesDictionary = new Dictionary<string, string>
+                new UrlRoute()
                 {
-                    {"controller", "Test"},
-                    {"action", "Index"}
-                }
-            });
-
-            RouteCollection.Add(
-            new UrlRoute()
-            {
-                Name = "Register",
-                Url = "{controller}/{action}",
-                Fragment = "Account/Register",
-                PropertiesDictionary = new Dictionary<string, string>
+                    Name = "Default",
+                    Url = "{controller}/{action}",
+                    Fragment = "Test/Index",
+                    PropertiesDictionary = new Dictionary<string, string>
+                    {
+                        {"controller", "Test"},
+                        {"action", "Index"}
+                    }
+                },
+                new UrlRoute()
                 {
-                    {"controller", "Account"},
-                    {"action", "Register"}
-                }
-            });
-
-            RouteCollection.Add(
-            new UrlRoute()
-            {
-                Name = "Login",
-                Url = "{controller}/{action}",
-                Fragment = "Account/Login",
-                PropertiesDictionary = new Dictionary<string, string>
+                    Name = "Register",
+                    Url = "{controller}/{action}",
+                    Fragment = "Account/Register",
+                    PropertiesDictionary = new Dictionary<string, string>
+                    {
+                        {"controller", "Account"},
+                        {"action", "Register"}
+                    }
+                },
+                new UrlRoute()
                 {
-                    {"controller", "Account"},
-                    {"action", "Login"}
-                }
-            });
-
-            RouteCollection.Add(
-            new UrlRoute()
-            {
-                Name = "Home",
-                Url = "{controller}/{action}",
-                Fragment = "Home/Index",
-                PropertiesDictionary = new Dictionary<string, string>
+                    Name = "Login",
+                    Url = "{controller}/{action}",
+                    Fragment = "Account/Login",
+                    PropertiesDictionary = new Dictionary<string, string>
+                    {
+                        {"controller", "Account"},
+                        {"action", "Login"}
+                    }
+                },
+                new UrlRoute()
                 {
-                    {"controller", "Home"},
-                    {"action", "Index"}
+                    Name = "Home",
+                    Url = "{controller}/{action}",
+                    Fragment = "Home/Index",
+                    PropertiesDictionary = new Dictionary<string, string>
+                    {
+                        {"controller", "Home"},
+                        {"action", "Index"}
+                    }
                 }
-            });
+            };
 
-
-            return RouteCollection as IList<IUrlRoute>;
+            
+            return routeCollection as IList<IUrlRoute>;
         }
     }
 }
